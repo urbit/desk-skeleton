@@ -1,0 +1,7 @@
+::  The kernel version(s) your desk is compatible with.
+::  Note it's not a hoon list, just one on each line:
+::  [%zuse 410]
+::  [%zuse 411]
+::  [%zuse 412]
+::
+[%zuse 410]

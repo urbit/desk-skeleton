@@ -1,0 +1,36 @@
+::  Configure Landscape app tile & metadata.
+::
+::  Check the docs for more details:
+::  https://docs.urbit.org/userspace/apps/reference/dist/docket
+::
+::  Required fields:
+::
+::  - title: app name, displayed on title
+::  - info: app description
+::  - color: RGB hex color of app tile
+::  - version: major/minor/patch app version
+::  - website: website or github repo for app
+::  - license: software license of desk
+::
+::  Optional fields:
+::
+::  - image: app tile image URL in a cord
+::
+::  You must also specify exactly one of the following:
+::
+::  - glob-http: URL and hash to fetch front-end bundle
+::  - glob-ames: ship and has to fetch front-end bundle
+::  - site: root-relative URL to local front-end
+::
+:~
+  title+'Example'
+  info+'An example app.'
+  color+0x7acc
+  version+[0 1 0]
+  website+'https://github.com/urbit/desk-skeleton'
+  license+'MIT'
+  base+'example'
+  ::  glob-http+['https://example.com/0v0.glob' 0v0]
+  ::  glob-ames+[~sampel 0v0]
+  site+/example
+==

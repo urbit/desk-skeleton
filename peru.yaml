@@ -1,0 +1,25 @@
+imports:
+  base-dev: ./dist
+  landscape-dev: ./dist
+
+git module base-dev:
+  url: https://github.com/urbit/urbit
+  reup: master
+  export: pkg/base-dev
+  pick:
+    - pkg/base-dev/mar
+    - pkg/base-dev/lib
+    - pkg/base-dev/sur
+  rev: bd3973dc97c0f4ac8eae5fddfa15c39d522eb8d0
+
+git module landscape-dev:
+  url: https://github.com/tloncorp/landscape
+  reup: master
+  export: desk-dev
+  pick:
+    - desk-dev/lib
+    - desk-dev/sur
+    - desk-dev/mar
+  drop:
+    - desk-dev/lib/mip.hoon
+  rev: 90a17528a938eebda57e837b7fec76d543f5f7cf
